@@ -11,6 +11,8 @@
 - `90_shared_assets/` - reusable templates and shared non-secret assets.
 - `98_archive/` - completed mission archives.
 - `99_local_outputs/` - local generated outputs, logs, cache files, temporary exports, and non-committed work products.
+- `LOOP_QUEUE.md` - queue of independent loop missions.
+- `CURRENT_LOOP_TASKS.md` - current status and next action for each independent loop.
 - `C:\Users\User\Desktop\Work\Loop Mission Worktrees\` - external local Git worktrees for production branches; these are outside the main repo and should not be committed.
 - `worktrees/` - optional fallback local checkout folder inside the repo if explicitly requested; this folder is ignored and should not be committed.
 
@@ -60,12 +62,32 @@ Each archive should contain:
 - Production output manifest.
 - Required references or reproduction notes.
 
+## Independent Loop Model
+
+One loop run means one production line completes:
+
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
+
+The five production loops are independent. They do not have to run in sequence. Cross-loop handoff is optional and should be written as a manifest.
+
+Mission IDs:
+
+- `WEB-M001`
+- `ADS-M001`
+- `UNREAL-M001`
+- `PROMPT-M001`
+- `UNITY-M001`
+- Optional shared labels: `SHARED-M001`, `CAMPAIGN-M001`
+
 ## How Codex Should Navigate
 
 1. Read `AGENTS.md`.
-2. Read the target loop master document.
-3. Inspect existing files in the target folder.
-4. Confirm the task affects only one production loop unless instructed otherwise.
-5. Use shared templates from `90_shared_assets/templates/`.
-6. Save completed outputs with versioned names.
-7. Report validation and next task.
+2. Read `00_studio_rules/independent_loop_protocol.md`.
+3. Read the target loop master document.
+4. Inspect existing files in the target folder.
+5. Confirm the task affects only one production loop unless instructed otherwise.
+6. Use shared templates from `90_shared_assets/templates/`.
+7. Save completed outputs with versioned names.
+8. Report validation and next task.

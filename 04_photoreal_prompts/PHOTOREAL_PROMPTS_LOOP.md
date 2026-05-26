@@ -4,6 +4,16 @@
 
 Produce realistic image generation prompts with full prompts, compact prompts, negative prompts, variation prompts, QC notes, failure analysis, and retry prompts.
 
+## Independent Loop Rule
+
+This loop can run independently as `PROMPT-M001`, `PROMPT-M002`, and so on. One photoreal prompts loop run means:
+
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
+
+It does not require web, ads, Unreal, or Unity work unless a cross-loop handoff is explicitly requested.
+
 ## Input Requirements
 
 - Subject.
@@ -62,4 +72,3 @@ Produce realistic image generation prompts with full prompts, compact prompts, n
 ```text
 Read AGENTS.md and 04_photoreal_prompts/PHOTOREAL_PROMPTS_LOOP.md. Create a complete photoreal prompt pack with QC and retry prompts for [subject]. Work only in 04_photoreal_prompts/.
 ```
-

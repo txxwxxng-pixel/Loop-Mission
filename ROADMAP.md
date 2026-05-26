@@ -14,9 +14,10 @@
 
 ## Phase 3: First Output Loop Tests
 
-- Run one small mission per loop.
+- Run one small independent mission per loop.
 - Validate each output against its loop definition of done.
 - Record QA reports and output manifests.
+- Do not treat the five loops as one mandatory sequence.
 
 ## Phase 4: Repeatable Production Archive
 
@@ -29,4 +30,3 @@
 - Convert repeated outputs into productized workflows.
 - Add marketplace, deployment, upload, or sales-readiness checklists.
 - Keep automation practical and loop-specific.
-

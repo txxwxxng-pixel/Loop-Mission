@@ -4,6 +4,16 @@
 
 Produce premium advertising and SNS creative systems, including campaign briefs, image prompt packs, captions, hashtags, and upload-ready asset plans.
 
+## Independent Loop Rule
+
+This loop can run independently as `ADS-M001`, `ADS-M002`, and so on. One ads loop run means:
+
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
+
+It does not require web, Unreal, photoreal prompts, or Unity work unless a cross-loop handoff is explicitly requested.
+
 ## Input Requirements
 
 - Product, service, or brand.
@@ -61,4 +71,3 @@ Produce premium advertising and SNS creative systems, including campaign briefs,
 ```text
 Read AGENTS.md and 02_premium_ads/PREMIUM_ADS_LOOP.md. Create a campaign brief, prompt pack, captions, hashtags, and QA report for [product]. Work only in 02_premium_ads/.
 ```
-

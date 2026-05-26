@@ -4,6 +4,16 @@
 
 Produce interactive websites, landing pages, brand homepages, animated web experiences, and deployable web prototypes.
 
+## Independent Loop Rule
+
+This loop can run independently as `WEB-M001`, `WEB-M002`, and so on. One web loop run means:
+
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
+
+It does not require ads, Unreal, photoreal prompts, or Unity work unless a cross-loop handoff is explicitly requested.
+
 ## Input Requirements
 
 - Brand, product, or page goal.
@@ -60,4 +70,3 @@ Produce interactive websites, landing pages, brand homepages, animated web exper
 ```text
 Read AGENTS.md and 01_interactive_web/INTERACTIVE_WEB_LOOP.md. Create a mission brief and prototype plan for [site]. Work only in 01_interactive_web/.
 ```
-

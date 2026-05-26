@@ -4,6 +4,16 @@
 
 Plan Unreal Engine 3D spaces such as escape rooms, audio studios, concert halls, immersive environments, blockouts, automation scripts, and render plans.
 
+## Independent Loop Rule
+
+This loop can run independently as `UNREAL-M001`, `UNREAL-M002`, and so on. One Unreal spaces loop run means:
+
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
+
+It does not require web, ads, photoreal prompts, or Unity work unless a cross-loop handoff is explicitly requested.
+
 ## Input Requirements
 
 - Space concept.
@@ -63,4 +73,3 @@ Plan Unreal Engine 3D spaces such as escape rooms, audio studios, concert halls,
 ```text
 Read AGENTS.md and 03_unreal_spaces/UNREAL_SPACES_LOOP.md. Create a space brief, blockout plan, asset manifest, render plan, and QA report for [space]. Work only in 03_unreal_spaces/.
 ```
-

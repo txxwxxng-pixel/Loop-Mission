@@ -4,6 +4,16 @@
 
 Produce Unity 2D game and commerce plans, including mobile game concepts, market reference analysis, playable MVP planning, monetization design, and product sales connections.
 
+## Independent Loop Rule
+
+This loop can run independently as `UNITY-M001`, `UNITY-M002`, and so on. One Unity 2D games loop run means:
+
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
+
+It does not require web, ads, Unreal, or photoreal prompt work unless a cross-loop handoff is explicitly requested.
+
 ## Input Requirements
 
 - Game concept or product category.
@@ -61,4 +71,3 @@ Produce Unity 2D game and commerce plans, including mobile game concepts, market
 ```text
 Read AGENTS.md and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Create a market reference analysis, game concept brief, core loop, monetization plan, store asset plan, and QA report for [game]. Work only in 05_unity_2d_games/.
 ```
-

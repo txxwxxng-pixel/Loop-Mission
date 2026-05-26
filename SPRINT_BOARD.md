@@ -2,15 +2,21 @@
 
 ## Current Objective
 
-Complete the first-pass base operating foundation for Loop Mission without creating an app or unnecessary code.
+Run Loop Mission as five independent production loops. A loop means one production line completes its own cycle:
 
-## Next 5 Practical Missions
+```text
+planning -> reference gathering -> production -> QA -> export/archive -> next seed
+```
 
-1. Interactive web: create one landing page mission brief and responsive prototype plan.
-2. Premium ads: create one campaign brief, image prompt pack, and caption pack for a test product.
-3. Unreal spaces: create one immersive room brief, blockout plan, asset manifest, and render plan.
-4. Photoreal prompts: create one prompt pack with full, compact, negative, variation, QC, and retry prompts.
-5. Unity 2D games: create one mobile game concept brief with core loop, monetization plan, and store asset plan.
+The five loops do not have to run in sequence. Cross-loop handoff is optional.
+
+## Independent Loop Missions
+
+1. `WEB-M001`: interactive web landing page mission.
+2. `ADS-M001`: premium ads campaign mission.
+3. `UNREAL-M001`: Unreal space concept mission.
+4. `PROMPT-M001`: photoreal prompt mission.
+5. `UNITY-M001`: Unity 2D game/commerce mission.
 
 ## Worktree Setup
 
@@ -28,36 +34,35 @@ C:\Users\User\Desktop\Work\Loop Mission Worktrees
 
 ## Blocked Items
 
-- No first mission briefs have been selected.
 - No output archive examples exist yet.
+- `UNITY-M001` has not started yet.
+- Cross-loop handoffs must be explicit manifests, not assumed.
 
 ## Ready-To-Run Codex Tasks
 
 ```text
-Read AGENTS.md and 01_interactive_web/INTERACTIVE_WEB_LOOP.md. Create the first interactive web mission brief only. Do not build the site yet.
+/plan
+Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Plan UNITY-M001 as an independent Unity 2D game/commerce mission.
 ```
 
 ```text
-Read AGENTS.md and 02_premium_ads/PREMIUM_ADS_LOOP.md. Create a premium ads campaign brief and prompt pack for one selected product.
+/goal
+Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Execute UNITY-M001 inside 05_unity_2d_games/ only. Do not create Unity project files yet.
 ```
 
 ```text
-Read AGENTS.md and 03_unreal_spaces/UNREAL_SPACES_LOOP.md. Create a space brief, blockout plan, and asset manifest for one Unreal room concept.
-```
-
-```text
-Read AGENTS.md and 04_photoreal_prompts/PHOTOREAL_PROMPTS_LOOP.md. Create a photoreal prompt pack with QC and retry prompts.
-```
-
-```text
-Read AGENTS.md and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Create a Unity 2D game concept brief and MVP plan.
+/goal
+Read AGENTS.md and [target loop master document]. Execute one independent loop mission in the target folder only. Use cross-loop sources only if explicitly listed as read-only references.
 ```
 
 ## Validation Checklist
 
 - [ ] Target loop is identified.
+- [ ] Mission ID uses the target loop prefix.
 - [ ] Only one production loop is modified.
 - [ ] Output requirements are clear.
 - [ ] QA checklist is completed.
 - [ ] Archive destination is proposed.
+- [ ] Next seed is written for the same loop by default.
+- [ ] Cross-loop handoff is optional and written as a manifest if needed.
 - [ ] No secrets, generated engine folders, large binaries, or vendor assets are committed.
