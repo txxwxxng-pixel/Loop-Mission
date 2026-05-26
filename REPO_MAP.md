@@ -11,7 +11,8 @@
 - `90_shared_assets/` - reusable templates and shared non-secret assets.
 - `98_archive/` - completed mission archives.
 - `99_local_outputs/` - local generated outputs, logs, cache files, temporary exports, and non-committed work products.
-- `worktrees/` - optional local Git worktrees when explicitly created later; this folder is ignored and should not be committed.
+- `C:\Users\User\Desktop\Work\Loop Mission Worktrees\` - external local Git worktrees for production branches; these are outside the main repo and should not be committed.
+- `worktrees/` - optional fallback local checkout folder inside the repo if explicitly requested; this folder is ignored and should not be committed.
 
 ## Standard Loop Subfolders
 
@@ -41,6 +42,7 @@
 - Large binaries, vendor asset packs, caches, logs, and local experiments.
 - Generated files under `99_local_outputs/logs/` or `99_local_outputs/cache/`.
 - Local checkout folders under `worktrees/`.
+- External worktree folders copied back into the main repo.
 
 ## How Outputs Should Be Archived
 

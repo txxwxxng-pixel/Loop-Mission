@@ -73,17 +73,23 @@ If authentication or permissions fail, stop and report the exact error.
 
 Do not create local worktrees until the repository is clean and the user explicitly asks for production worktree setup.
 
-Recommended local worktree paths:
+Current local worktree root:
 
 ```text
-worktrees/lm-01-interactive-web
-worktrees/lm-02-premium-ads
-worktrees/lm-03-unreal-spaces
-worktrees/lm-04-photoreal-prompts
-worktrees/lm-05-unity-2d-games
+C:\Users\User\Desktop\Work\Loop Mission Worktrees
 ```
 
-`worktrees/` must remain ignored because these are local checkout folders, not studio deliverables.
+Current local worktree paths:
+
+```text
+C:\Users\User\Desktop\Work\Loop Mission Worktrees\loop-web      -> lm/01-interactive-web
+C:\Users\User\Desktop\Work\Loop Mission Worktrees\loop-ads      -> lm/02-premium-ads
+C:\Users\User\Desktop\Work\Loop Mission Worktrees\loop-unreal   -> lm/03-unreal-spaces
+C:\Users\User\Desktop\Work\Loop Mission Worktrees\loop-prompts  -> lm/04-photoreal-prompts
+C:\Users\User\Desktop\Work\Loop Mission Worktrees\loop-unity    -> lm/05-unity-2d-games
+```
+
+Keep worktrees outside the main repo unless the user explicitly asks otherwise. `worktrees/` remains ignored as a fallback local checkout folder, not a studio deliverable.
 
 ## Never Commit
 
@@ -93,4 +99,3 @@ worktrees/lm-05-unity-2d-games
 - Unreal generated folders such as `Binaries/`, `Intermediate/`, `Saved/`, and `DerivedDataCache/`.
 - Unity generated folders such as `Library/`, `Temp/`, `Obj/`, `Logs/`, and `UserSettings/`.
 - Local logs, caches, and generated outputs.
-

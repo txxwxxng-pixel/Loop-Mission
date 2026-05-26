@@ -33,7 +33,9 @@ Mission-specific branches can be created later from these loop branches when nee
 
 - One worktree should focus on one production loop.
 - Do not use one worktree to edit multiple loop outputs unless explicitly requested.
-- Keep local worktrees under `worktrees/` when they are created.
+- Keep local worktrees outside the main repo by default.
+- Current local worktree root: `C:\Users\User\Desktop\Work\Loop Mission Worktrees`.
+- Use `loop-web`, `loop-ads`, `loop-unreal`, `loop-prompts`, and `loop-unity` as the local worktree folder names.
 - Keep generated local outputs out of commits.
 - Bring only reviewed, useful artifacts back to `main`.
 

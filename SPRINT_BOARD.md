@@ -12,10 +12,22 @@ Complete the first-pass base operating foundation for Loop Mission without creat
 4. Photoreal prompts: create one prompt pack with full, compact, negative, variation, QC, and retry prompts.
 5. Unity 2D games: create one mobile game concept brief with core loop, monetization plan, and store asset plan.
 
+## Worktree Setup
+
+- `loop-web` -> `lm/01-interactive-web`
+- `loop-ads` -> `lm/02-premium-ads`
+- `loop-unreal` -> `lm/03-unreal-spaces`
+- `loop-prompts` -> `lm/04-photoreal-prompts`
+- `loop-unity` -> `lm/05-unity-2d-games`
+
+Root:
+
+```text
+C:\Users\User\Desktop\Work\Loop Mission Worktrees
+```
+
 ## Blocked Items
 
-- Production branches are planned: `lm/01-interactive-web`, `lm/02-premium-ads`, `lm/03-unreal-spaces`, `lm/04-photoreal-prompts`, and `lm/05-unity-2d-games`.
-- Local worktrees have not been created yet.
 - No first mission briefs have been selected.
 - No output archive examples exist yet.
 
