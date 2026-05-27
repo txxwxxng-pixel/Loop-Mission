@@ -6,6 +6,13 @@ Current independent loop task tracker.
 
 A loop task is scoped to one production line. Cross-loop source reading is allowed only as reference unless a handoff manifest or user instruction says otherwise.
 
+Future work can start from:
+
+- A project seed.
+- A loop-specific input contract.
+- A `/plan`.
+- A `/goal`.
+
 ## Current Tasks
 
 ### `01_interactive_web/`
@@ -36,10 +43,9 @@ A loop task is scoped to one production line. Cross-loop source reading is allow
 
 - Current ID: `UNITY-M001`
 - Status: Ready
-- Next action: Plan a Unity 2D game/commerce mission independently.
+- Next action: Create or validate the Unity input contract, then plan a Unity 2D game/commerce mission independently.
 
 ## Cross-Loop Tasks
 
 - `CAMPAIGN-M001`: optional shared Loop Mission launch campaign context.
 - Do not use this as proof that all five loops must run in sequence.
-

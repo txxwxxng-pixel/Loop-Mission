@@ -14,6 +14,48 @@ planning -> reference gathering -> production -> QA -> export/archive -> next se
 
 It does not require web, ads, photoreal prompts, or Unity work unless a cross-loop handoff is explicitly requested.
 
+## Project Seed Usage
+
+This loop may read a project seed from `90_shared_assets/project_seeds/` as optional spatial/world direction. A seed can guide room purpose, mood, materials, target use, and production priorities, but it does not require other loops to run.
+
+## Input Contract
+
+Use:
+
+```text
+03_unreal_spaces/templates/unreal_input_contract_template.md
+```
+
+Use the contract before `/plan` or `/goal` when scale, drawings, room list, material direction, lighting, assets, project path, or execution mode need to be clarified.
+
+## References
+
+References can include CAD/DXF/PDF/image drawings, project seeds, visual boards, dimensions, or reviewed outputs from other loops. Other loop files are read-only unless a handoff manifest explicitly allows edits.
+
+## Codex Can Produce
+
+- CAD/drawing interpretation plans.
+- Scale plans.
+- Blockout plans.
+- Material/light/camera plans.
+- Unreal Python script plans.
+- Editor automation scripts when project path and version are known.
+- QA reports.
+- Export/handoff manifests.
+
+## User Must Verify
+
+- Actual Unreal Editor result.
+- Space scale by eye.
+- Asset/material quality.
+- Lighting quality.
+- Collision/navigation/interactions.
+- Final packaged/demo quality.
+
+## Export/Archive Expectations
+
+Blockout plans, script plans, QA reports, render notes, and handoff manifests should be stored inside `03_unreal_spaces/`. Do not commit generated Unreal folders or large assets.
+
 ## Input Requirements
 
 - Space concept.

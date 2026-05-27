@@ -14,6 +14,45 @@ planning -> reference gathering -> production -> QA -> export/archive -> next se
 
 It does not require ads, Unreal, photoreal prompts, or Unity work unless a cross-loop handoff is explicitly requested.
 
+## Project Seed Usage
+
+This loop may read a project seed from `90_shared_assets/project_seeds/` as optional top-level direction. A seed can guide brand, audience, visual tone, and priority, but it does not require other loops to run.
+
+## Input Contract
+
+Use:
+
+```text
+01_interactive_web/templates/web_input_contract_template.md
+```
+
+Use the contract before `/plan` or `/goal` when the page goal, target user, sections, interactions, assets, tech preference, or QA criteria need to be clarified.
+
+## References
+
+References can include project seeds, brand notes, screenshots, websites, or reviewed outputs from other loops. Other loop files are read-only unless a handoff manifest explicitly allows edits.
+
+## Codex Can Produce
+
+- HTML/CSS/JS MVPs.
+- React/Vite projects when appropriate.
+- Interaction scripts.
+- Responsive layouts.
+- README/run guides.
+- QA reports.
+- Export/handoff manifests.
+
+## User Must Verify
+
+- Visual taste.
+- Brand fit.
+- Final copy quality.
+- Deployment readiness.
+
+## Export/Archive Expectations
+
+Export notes, QA reports, and handoff manifests should be stored inside `01_interactive_web/`. Reviewed completed outputs can be merged to `main` and archived later.
+
 ## Input Requirements
 
 - Brand, product, or page goal.

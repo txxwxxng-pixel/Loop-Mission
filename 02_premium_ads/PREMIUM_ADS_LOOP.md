@@ -14,6 +14,45 @@ planning -> reference gathering -> production -> QA -> export/archive -> next se
 
 It does not require web, Unreal, photoreal prompts, or Unity work unless a cross-loop handoff is explicitly requested.
 
+## Project Seed Usage
+
+This loop may read a project seed from `90_shared_assets/project_seeds/` as optional campaign direction. A seed can guide offer, market, visual tone, audience, and monetization, but it does not require other loops to run.
+
+## Input Contract
+
+Use:
+
+```text
+02_premium_ads/templates/ads_input_contract_template.md
+```
+
+Use the contract before `/plan` or `/goal` when campaign goal, platform, post formats, CTA, hashtag strategy, image needs, or QA criteria need to be clarified.
+
+## References
+
+References can include project seeds, product notes, platform examples, or reviewed outputs from other loops. Other loop files are read-only unless a handoff manifest explicitly allows edits.
+
+## Codex Can Produce
+
+- Campaign briefs.
+- SNS captions.
+- Hashtag sets.
+- Image prompt handoff docs.
+- Upload plans.
+- QA reports.
+- Handoff manifests.
+
+## User Must Verify
+
+- Brand suitability.
+- Platform fit.
+- Final post selection.
+- Actual upload timing.
+
+## Export/Archive Expectations
+
+Upload plans, caption packs, QA reports, and handoff manifests should be stored inside `02_premium_ads/`. Reviewed completed outputs can be merged to `main` and archived later.
+
 ## Input Requirements
 
 - Product, service, or brand.

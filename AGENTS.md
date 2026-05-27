@@ -20,6 +20,8 @@ This file is the repo-wide operating contract for Codex in Loop Mission.
 - Treat each production loop as an independent repeatable cycle: planning, references, production, QA, export/archive, and next seed.
 - Do not assume the five production loops must run in sequence.
 - Cross-loop handoff is optional and must be requested or written as a clear manifest.
+- Project seeds are top-level references only; they do not authorize multi-loop execution by default.
+- Loop input contracts should be used when a mission needs clear user-provided requirements.
 - At the end of every task, report changed files, validation performed, remaining blockers, and recommended next task.
 
 ## Production Line Boundaries

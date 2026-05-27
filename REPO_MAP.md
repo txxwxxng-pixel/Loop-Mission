@@ -9,6 +9,7 @@
 - `04_photoreal_prompts/` - photorealistic image prompt packs, QC notes, and retry systems.
 - `05_unity_2d_games/` - Unity 2D game, commerce, monetization, and store asset planning.
 - `90_shared_assets/` - reusable templates and shared non-secret assets.
+- `90_shared_assets/project_seeds/` - top-level planning seeds that any loop may read as optional reference.
 - `98_archive/` - completed mission archives.
 - `99_local_outputs/` - local generated outputs, logs, cache files, temporary exports, and non-committed work products.
 - `LOOP_QUEUE.md` - queue of independent loop missions.
@@ -25,6 +26,14 @@
 - `exports/` - export notes and final deliverables safe to track.
 - `qa_reports/` - validation reports and review notes.
 - `templates/` - loop-specific reusable templates.
+
+## Project Seeds And Input Contracts
+
+- Project seeds live in `90_shared_assets/project_seeds/`.
+- Seed template: `90_shared_assets/templates/project_seed_template.md`.
+- Project seeds are optional top-level references, not mandatory cross-loop workflows.
+- Each loop can use its own input contract from its `templates/` folder before `/plan` or `/goal`.
+- Cross-loop source use should be explicit and read-only unless a handoff manifest says otherwise.
 
 ## What Belongs In Main
 
@@ -43,6 +52,7 @@
 - Unity generated folders such as `Library/`, `Temp/`, `Obj/`, and `UserSettings/`.
 - Large binaries, vendor asset packs, caches, logs, and local experiments.
 - Generated files under `99_local_outputs/logs/` or `99_local_outputs/cache/`.
+- Heavy image outputs under `04_photoreal_prompts/generated_outputs/`.
 - Local checkout folders under `worktrees/`.
 - External worktree folders copied back into the main repo.
 

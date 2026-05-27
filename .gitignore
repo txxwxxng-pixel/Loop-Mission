@@ -43,6 +43,8 @@ UserSettings/
 # Local generated outputs
 99_local_outputs/logs/
 99_local_outputs/cache/
+04_photoreal_prompts/generated_outputs/*
+!04_photoreal_prompts/generated_outputs/.gitkeep
 *.log
 
 # Local worktrees

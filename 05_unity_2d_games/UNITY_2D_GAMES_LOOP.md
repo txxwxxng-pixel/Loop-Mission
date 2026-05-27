@@ -14,6 +14,48 @@ planning -> reference gathering -> production -> QA -> export/archive -> next se
 
 It does not require web, ads, Unreal, or photoreal prompt work unless a cross-loop handoff is explicitly requested.
 
+## Project Seed Usage
+
+This loop may read a project seed from `90_shared_assets/project_seeds/` as optional game/product direction. A seed can guide genre, target player, product category, monetization, visual tone, and production priorities, but it does not require other loops to run.
+
+## Input Contract
+
+Use:
+
+```text
+05_unity_2d_games/templates/unity_input_contract_template.md
+```
+
+Use the contract before `/plan` or `/goal` when game genre, references, core loop, session length, monetization, Unity version, project path, or output target need to be clarified.
+
+## References
+
+References can include project seeds, app/game categories, monetization examples, store screenshots, or reviewed outputs from other loops. Other loop files are read-only unless a handoff manifest explicitly allows edits.
+
+## Codex Can Produce
+
+- Game concept docs.
+- Core loop design.
+- Monetization plans.
+- C# scripts.
+- Simple Unity MVP structure when project path/version are known.
+- Editor script plans.
+- Build guidance.
+- QA reports.
+- Export/handoff manifests.
+
+## User Must Verify
+
+- Actual play feel.
+- Balance.
+- Unity Editor state.
+- Build quality.
+- Store/commercial readiness.
+
+## Export/Archive Expectations
+
+Concept docs, MVP plans, scripts, QA reports, and handoff manifests should be stored inside `05_unity_2d_games/`. Do not commit Unity generated folders or binaries.
+
 ## Input Requirements
 
 - Game concept or product category.

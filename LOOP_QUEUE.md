@@ -7,6 +7,7 @@ Loop Mission queue for independent production loop missions.
 - Each queue item belongs to one target loop by default.
 - Cross-loop handoffs are optional and must be labeled.
 - A loop can be planned and executed with `/plan` and `/goal` independently.
+- Future work can begin from a project seed, a loop-specific input contract, `/plan`, or `/goal`.
 - Do not assume all five loops must run in sequence.
 - Completed reviewed outputs can be merged to `main`.
 
@@ -26,3 +27,13 @@ Loop Mission queue for independent production loop missions.
 | --- | --- | --- | --- |
 | CAMPAIGN-M001 | Loop Mission launch campaign | Optional | Existing work can be used as shared source, but future loops do not have to follow it. |
 
+## Recommended Workflow
+
+1. User creates or provides a project seed.
+2. Codex runs `/plan` for one target loop.
+3. Codex creates or validates the loop input contract.
+4. Codex runs `/goal` for that target loop.
+5. Codex commits/pushes the branch.
+6. User reviews.
+7. Approved output is merged to main.
+8. Output is archived and next seed/task is created.

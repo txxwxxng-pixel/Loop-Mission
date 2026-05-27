@@ -42,12 +42,12 @@ C:\Users\User\Desktop\Work\Loop Mission Worktrees
 
 ```text
 /plan
-Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Plan UNITY-M001 as an independent Unity 2D game/commerce mission.
+Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, 00_studio_rules/project_seed_usage_rules.md, and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Plan UNITY-M001 as an independent Unity 2D game/commerce mission. Use a project seed only if provided.
 ```
 
 ```text
 /goal
-Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Execute UNITY-M001 inside 05_unity_2d_games/ only. Do not create Unity project files yet.
+Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, 00_studio_rules/project_seed_usage_rules.md, and 05_unity_2d_games/UNITY_2D_GAMES_LOOP.md. Validate or create the UNITY-M001 input contract, then execute inside 05_unity_2d_games/ only. Do not create Unity project files yet.
 ```
 
 ```text
@@ -55,10 +55,23 @@ Read AGENTS.md, 00_studio_rules/independent_loop_protocol.md, and 05_unity_2d_ga
 Read AGENTS.md and [target loop master document]. Execute one independent loop mission in the target folder only. Use cross-loop sources only if explicitly listed as read-only references.
 ```
 
+## Recommended Workflow
+
+1. User creates or provides a project seed.
+2. Codex runs `/plan` for one target loop.
+3. Codex creates or validates the loop input contract.
+4. Codex runs `/goal` for that target loop.
+5. Codex commits/pushes the branch.
+6. User reviews.
+7. Approved output is merged to main.
+8. Output is archived and next seed/task is created.
+
 ## Validation Checklist
 
 - [ ] Target loop is identified.
 - [ ] Mission ID uses the target loop prefix.
+- [ ] Project seed is used only as optional reference.
+- [ ] Loop input contract exists or is explicitly deferred.
 - [ ] Only one production loop is modified.
 - [ ] Output requirements are clear.
 - [ ] QA checklist is completed.

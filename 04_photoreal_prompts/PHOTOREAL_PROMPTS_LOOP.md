@@ -14,6 +14,51 @@ planning -> reference gathering -> production -> QA -> export/archive -> next se
 
 It does not require web, ads, Unreal, or Unity work unless a cross-loop handoff is explicitly requested.
 
+## Project Seed Usage
+
+This loop may read a project seed from `90_shared_assets/project_seeds/` as optional visual direction. A seed can guide subject, style, mood, market use, aspect ratios, and production priorities, but it does not require other loops to run.
+
+## Input Contract
+
+Use:
+
+```text
+04_photoreal_prompts/templates/image_prompt_input_contract_template.md
+```
+
+Use the contract before `/plan` or `/goal` when subject, reference handling, style, camera, lighting, aspect ratio, target generation tool, or QC criteria need to be clarified.
+
+## Image Generation Workflow
+
+Prompt files, generation jobs, QA reports, and manifests can be tracked. Heavy generated outputs should stay in `04_photoreal_prompts/generated_outputs/` and should not be committed unless explicitly approved.
+
+## References
+
+References can include project seeds, visual direction, prompt packs, or reviewed outputs from other loops. Other loop files are read-only unless a handoff manifest explicitly allows edits.
+
+## Codex Can Produce
+
+- Full prompts.
+- Compact prompts.
+- Negative prompts.
+- Variation prompts.
+- Aspect-ratio-specific prompts.
+- QC checklists.
+- Retry/failure correction prompts.
+- Image generation job specs.
+- Manifest files.
+
+## User Must Verify
+
+- Final image taste.
+- Face/body/anatomy quality.
+- Brand fit.
+- Upload readiness.
+
+## Export/Archive Expectations
+
+Prompt packs, image generation jobs, QA reports, and manifests should be stored inside `04_photoreal_prompts/`. Actual generated image files should usually remain local or external.
+
 ## Input Requirements
 
 - Subject.
