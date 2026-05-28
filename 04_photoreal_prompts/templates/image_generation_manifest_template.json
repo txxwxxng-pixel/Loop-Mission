@@ -1,0 +1,36 @@
+{
+  "run_id": "YYYY-MM-DD_slug_v01",
+  "loop": "04_photoreal_prompts",
+  "backend": "openai_images_api_or_comfyui_local",
+  "status": "planned",
+  "goal": "",
+  "reference_sources": [],
+  "prompt_files": {
+    "full_prompt": "",
+    "compact_prompt": "",
+    "negative_prompt": "",
+    "variation_prompts": ""
+  },
+  "generation_settings": {
+    "model": "",
+    "aspect_ratio": "",
+    "size": "",
+    "seed": "",
+    "workflow": ""
+  },
+  "output_files": [],
+  "evaluation": {
+    "prompt_adherence": null,
+    "visual_quality": null,
+    "reference_alignment": null,
+    "composition_readability": null,
+    "artifact_control": null,
+    "accepted": null,
+    "failure_classes": [],
+    "notes": ""
+  },
+  "learning_update": {
+    "proposed": "",
+    "applied": false
+  }
+}
