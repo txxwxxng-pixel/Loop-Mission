@@ -2,62 +2,65 @@
 
 ## Mission
 
-Mission 001 - Loop Mission Interactive Landing Page MVP
+Mission 001 - Loop Mission Interactive Landing Page MVP (rebuilt)
+
+- **Run:** WEB-M001
+- **Loop:** `01_interactive_web/`
+- **Date:** 2026-06-01
+- **Branch:** `claude/interactive-web-demo-kLgnb`
+- **Status:** MVP ready for user review
 
 ## Source Files Read
 
 - `02_premium_ads/briefs/mission_001_premium_ai_studio_launch_campaign_brief.md`
 - `02_premium_ads/campaign_briefs/mission_001_campaign_concept.md`
-- `02_premium_ads/instagram_ready/mission_001_instagram_upload_plan.md`
-- `02_premium_ads/exports/mission_001_ads_handoff_manifest.md`
 - `04_photoreal_prompts/exports/mission_001_photoreal_prompt_manifest.md`
-- `04_photoreal_prompts/prompt_templates/mission_001_premium_ai_studio_launch_prompt_pack.md`
-
-## Output Files Created
-
 - `01_interactive_web/briefs/mission_001_loop_mission_landing_page_brief.md`
-- `01_interactive_web/projects/mission_001_loop_mission_landing_page/README.md`
-- `01_interactive_web/projects/mission_001_loop_mission_landing_page/index.html`
-- `01_interactive_web/projects/mission_001_loop_mission_landing_page/styles.css`
-- `01_interactive_web/projects/mission_001_loop_mission_landing_page/script.js`
-- `01_interactive_web/exports/mission_001_landing_page_handoff_manifest.md`
-- `01_interactive_web/qa_reports/mission_001_landing_page_qa_report.md`
+
+## Output Files
+
+| File | Purpose |
+| --- | --- |
+| `projects/mission_001_loop_mission_landing_page/index.html` | Page markup, six sections |
+| `projects/mission_001_loop_mission_landing_page/styles.css` | Design system, responsive layout, motion |
+| `projects/mission_001_loop_mission_landing_page/script.js` | Loop selector, workflow stepper, scroll reveal, nav state |
+| `projects/mission_001_loop_mission_landing_page/README.md` | Run guide and project notes |
+| `qa_reports/mission_001_landing_page_qa_report.md` | QA report |
 
 ## Project Type
 
-Self-contained static HTML/CSS/JS MVP. No dependency install is required.
+Self-contained static HTML/CSS/JS MVP. No dependency install required.
 
 ## Run Command
 
-Open directly:
-
-```text
-01_interactive_web/projects/mission_001_loop_mission_landing_page/index.html
-```
-
-Optional local server from the project folder:
-
-```powershell
-python -m http.server 4173
-```
-
-Then open:
-
-```text
-http://localhost:4173
+```bash
+cd 01_interactive_web/projects/mission_001_loop_mission_landing_page
+python3 -m http.server 4173   # then open http://localhost:4173
 ```
 
 ## Included Sections
 
-- Hero section.
-- Five production loop selector.
-- Mission workflow section.
-- Premium AI studio positioning section.
-- Output archive section.
+- Hero with first-viewport Loop Mission signal, stats, and scroll cue.
+- Five production loop selector (tablist) with per-lane detail panel.
+- Mission workflow six-step stepper with per-phase output.
+- Premium AI studio positioning (four pillars).
+- Output archive artifact cards with QA status.
 - CTA section.
 - Future generated image placeholders.
 
-## Next Handoff
+## Scope Confirmation
 
-After review, this branch can be merged into `main`. Future tasks can add generated hero imagery, carousel visuals, or deployment packaging after image assets are reviewed.
+- Work limited to `01_interactive_web/`.
+- No generated images, no Streamlit, no web framework, no Unreal/Unity files.
+- Not merged to `main`; lives on the feature branch for review.
 
+## Open Handoffs
+
+- **IMG-M001 → WEB-M001:** Drop photoreal hero + loop visuals into the placeholders
+  (hero, loop panel media, archive cards) once generated.
+- **User verification:** visual taste, brand fit, final copy, deployment readiness.
+
+## Recommended Next Task
+
+Generate the hero and five loop visuals from the photoreal prompt pack, replace the
+placeholders, and re-run QA for visual + cross-browser checks.

@@ -1,150 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Loop Mission - One-Person AI Studio</title>
-    <meta name="description" content="Loop Mission turns ideas into production missions, validated outputs, archives, and next-step handoffs across five studio loops.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header" aria-label="Primary">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loop Mission is a premium one-person AI studio operating system with five production loops. One mission. Five loops. Real outputs." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <title>Loop Mission — One mission. Five loops. Real outputs.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
       <a class="brand" href="#hero" aria-label="Loop Mission home">
-        <span class="brand-mark" aria-hidden="true">LM</span>
-        <span>Loop Mission</span>
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">LOOP&nbsp;MISSION</span>
       </a>
-      <nav class="nav-links" aria-label="Page sections">
+      <nav class="nav__links" aria-label="Primary">
         <a href="#loops">Loops</a>
         <a href="#workflow">Workflow</a>
+        <a href="#studio">Studio</a>
         <a href="#archive">Archive</a>
       </nav>
-    </header>
+      <a class="btn btn--ghost nav__cta" href="#cta">Start Mission 001</a>
+    </div>
+  </header>
 
-    <main>
-      <section id="hero" class="hero section">
-        <div class="hero-copy">
-          <p class="eyebrow">Mission 001 / Build The Studio Loop</p>
-          <h1>Loop Mission</h1>
-          <p class="hero-line">A premium one-person AI studio operating system for turning ideas into validated production outputs.</p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#workflow">Start with one mission</a>
-            <a class="button secondary" href="#loops">Explore the five loops</a>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <p class="eyebrow reveal">Premium one-person AI studio · Operating system</p>
+        <h1 class="hero__title reveal">
+          One mission.<br />
+          <span class="accent">Five loops.</span><br />
+          Real outputs.
+        </h1>
+        <p class="hero__lede reveal">
+          Loop Mission turns ideas into production missions. Each mission produces a real
+          output, passes QA, enters the archive, and prepares the next handoff — without
+          losing control of scope, files, or next steps.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#loops">Choose one loop</a>
+          <a class="btn btn--ghost" href="#workflow">See the workflow</a>
+        </div>
+        <dl class="hero__stats reveal" aria-label="Studio at a glance">
+          <div><dt>Production loops</dt><dd>5</dd></div>
+          <div><dt>Operator</dt><dd>1</dd></div>
+          <div><dt>Mission at a time</dt><dd>1</dd></div>
+        </dl>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- ============ FIVE LOOPS ============ -->
+    <section class="section loops" id="loops">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">Five production lanes</p>
+          <h2 class="section__title">Pick a loop. Run one mission.</h2>
+          <p class="section__lede">
+            Each loop is an independent production line with its own briefs, references,
+            QA, and archive. Select a lane to see what it ships.
+          </p>
+        </header>
+
+        <div class="loops__layout reveal">
+          <!-- Selector -->
+          <div class="loops__selector" role="tablist" aria-label="Production loops">
+            <button class="loop-tab is-active" role="tab" aria-selected="true" aria-controls="loop-panel" id="tab-web" data-loop="web">
+              <span class="loop-tab__no">01</span>
+              <span class="loop-tab__name">Interactive Web</span>
+            </button>
+            <button class="loop-tab" role="tab" aria-selected="false" aria-controls="loop-panel" id="tab-ads" data-loop="ads">
+              <span class="loop-tab__no">02</span>
+              <span class="loop-tab__name">Premium Ads</span>
+            </button>
+            <button class="loop-tab" role="tab" aria-selected="false" aria-controls="loop-panel" id="tab-unreal" data-loop="unreal">
+              <span class="loop-tab__no">03</span>
+              <span class="loop-tab__name">Unreal Spaces</span>
+            </button>
+            <button class="loop-tab" role="tab" aria-selected="false" aria-controls="loop-panel" id="tab-photoreal" data-loop="photoreal">
+              <span class="loop-tab__no">04</span>
+              <span class="loop-tab__name">Photoreal Prompts</span>
+            </button>
+            <button class="loop-tab" role="tab" aria-selected="false" aria-controls="loop-panel" id="tab-unity" data-loop="unity">
+              <span class="loop-tab__no">05</span>
+              <span class="loop-tab__name">Unity 2D Games</span>
+            </button>
+          </div>
+
+          <!-- Panel -->
+          <article class="loop-panel" id="loop-panel" role="tabpanel" aria-labelledby="tab-web" tabindex="0">
+            <div class="loop-panel__media" aria-hidden="true">
+              <div class="placeholder">
+                <span class="placeholder__tag">Image placeholder</span>
+                <span class="placeholder__hint" data-loop-media>Photoreal prompt pack →</span>
+              </div>
+            </div>
+            <div class="loop-panel__body">
+              <p class="loop-panel__kicker" data-loop-kicker>Loop 01</p>
+              <h3 class="loop-panel__title" data-loop-title>Interactive Web</h3>
+              <p class="loop-panel__desc" data-loop-desc>
+                Interactive websites, landing pages, brand homepages, animated web prototypes,
+                and deployment-ready experiments.
+              </p>
+              <ul class="loop-panel__list" data-loop-list>
+                <li>HTML/CSS/JS MVPs</li>
+                <li>Responsive layouts &amp; interaction scripts</li>
+                <li>README run guide &amp; QA report</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORKFLOW ============ -->
+    <section class="section workflow" id="workflow">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">One mission, end to end</p>
+          <h2 class="section__title">The mission loop</h2>
+          <p class="section__lede">
+            Every loop run follows the same disciplined sequence. Step through it to see
+            the practical output at each stage.
+          </p>
+        </header>
+
+        <div class="workflow__layout reveal">
+          <ol class="workflow__steps" aria-label="Mission workflow steps">
+            <li><button class="step is-active" data-step="0"><span class="step__no">01</span><span class="step__label">Plan</span></button></li>
+            <li><button class="step" data-step="1"><span class="step__no">02</span><span class="step__label">Reference</span></button></li>
+            <li><button class="step" data-step="2"><span class="step__no">03</span><span class="step__label">Produce</span></button></li>
+            <li><button class="step" data-step="3"><span class="step__no">04</span><span class="step__label">QA</span></button></li>
+            <li><button class="step" data-step="4"><span class="step__no">05</span><span class="step__label">Archive</span></button></li>
+            <li><button class="step" data-step="5"><span class="step__no">06</span><span class="step__label">Handoff</span></button></li>
+          </ol>
+
+          <div class="workflow__detail" aria-live="polite">
+            <p class="workflow__phase" data-wf-phase>Phase 01 / Plan</p>
+            <h3 class="workflow__heading" data-wf-title>Define the mission and its done state</h3>
+            <p class="workflow__text" data-wf-text>
+              Read the loop rules and the brief, lock scope, target user, sections, and QA
+              criteria. The mission starts only when "done" is unambiguous.
+            </p>
+            <p class="workflow__output"><span>Output</span><em data-wf-output>Mission brief + definition of done</em></p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="studio-board" aria-label="Future generated hero image placeholder">
-          <div class="image-slot">
-            <span class="slot-label">Future generated hero image</span>
-            <span class="slot-title">Premium solo AI studio desk</span>
-          </div>
-          <div class="mission-card">
-            <span>Mission 001</span>
-            <strong>Build The Studio Loop</strong>
-            <small>Brief -> Output -> QA -> Archive -> Handoff</small>
-          </div>
-          <div class="lane-grid" aria-hidden="true">
-            <span>Web</span>
-            <span>Ads</span>
-            <span>Unreal</span>
-            <span>Prompts</span>
-            <span>Unity</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="loops" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Five production lines</p>
-          <h2>One loop at a time. Every output usable.</h2>
-        </div>
-
-        <div class="loop-controls" role="tablist" aria-label="Production loops">
-          <button class="loop-tab active" type="button" role="tab" aria-selected="true" data-loop="web">Web</button>
-          <button class="loop-tab" type="button" role="tab" aria-selected="false" data-loop="ads">Ads</button>
-          <button class="loop-tab" type="button" role="tab" aria-selected="false" data-loop="unreal">Unreal</button>
-          <button class="loop-tab" type="button" role="tab" aria-selected="false" data-loop="prompts">Prompts</button>
-          <button class="loop-tab" type="button" role="tab" aria-selected="false" data-loop="unity">Unity</button>
-        </div>
-
-        <div class="loop-showcase">
-          <div class="loop-panel">
-            <p class="loop-kicker" id="loop-kicker">Interactive Web</p>
-            <h3 id="loop-title">Landing pages and deployable prototypes</h3>
-            <p id="loop-body">Create brand homepages, interactive landing pages, responsive prototypes, run guides, and QA reports.</p>
-            <ul id="loop-list">
-              <li>Website brief</li>
-              <li>Responsive layout</li>
-              <li>Prototype QA</li>
-            </ul>
-          </div>
-          <div class="loop-visual image-slot" aria-label="Future loop visual placeholder">
-            <span class="slot-label">Future carousel visual</span>
-            <span id="loop-visual-title" class="slot-title">Five production loop station</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="workflow" class="section split-section">
-        <div class="section-heading">
-          <p class="eyebrow">Mission workflow</p>
-          <h2>Codex works inside the loop, not above it.</h2>
-          <p>Each task starts with inspection, stays inside the target folder, produces a real file, validates the result, and reports the next production step.</p>
-        </div>
-
-        <div class="workflow">
-          <div class="workflow-steps" role="tablist" aria-label="Mission workflow steps">
-            <button class="step active" type="button" data-step="brief">01 Brief</button>
-            <button class="step" type="button" data-step="build">02 Build</button>
-            <button class="step" type="button" data-step="qa">03 QA</button>
-            <button class="step" type="button" data-step="archive">04 Archive</button>
-            <button class="step" type="button" data-step="handoff">05 Handoff</button>
-          </div>
-          <div class="workflow-detail">
-            <span id="workflow-tag">Mission Brief</span>
-            <h3 id="workflow-title">Turn one idea into a scoped production mission.</h3>
-            <p id="workflow-copy">Define the target loop, required outputs, folder boundaries, blockers, and the practical artifact that must exist when the task is done.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section positioning">
-        <div class="positioning-copy">
+    <!-- ============ STUDIO POSITIONING ============ -->
+    <section class="section studio" id="studio">
+      <div class="wrap studio__grid">
+        <div class="studio__intro reveal">
           <p class="eyebrow">Premium AI studio positioning</p>
-          <h2>Not a dashboard. A production discipline.</h2>
-          <p>Loop Mission avoids vague control-tower thinking. The studio runs through files, branches, briefs, prompts, QA reports, manifests, and reviewed handoffs.</p>
+          <h2 class="section__title">Codex inside the workflow, not above it.</h2>
+          <p class="section__lede">
+            The value is not that AI does everything. The value is that production runs
+            inside clear rules — one operator, five lanes, one mission at a time, every
+            output checked and archived.
+          </p>
         </div>
-        <div class="proof-grid">
-          <div class="proof-item"><span>01</span><strong>Inspect before editing</strong></div>
-          <div class="proof-item"><span>02</span><strong>One production line per task</strong></div>
-          <div class="proof-item"><span>03</span><strong>Real usable output</strong></div>
-          <div class="proof-item"><span>04</span><strong>Validated next step</strong></div>
+        <div class="studio__pillars reveal">
+          <article class="pillar">
+            <h3>One-person studio power</h3>
+            <p>Solo production becomes a structured studio workflow with branch separation, briefs, and reusable templates.</p>
+          </article>
+          <article class="pillar">
+            <h3>Real outputs only</h3>
+            <p>Every task ships a usable artifact: a prototype, prompt pack, plan, manifest, or QA checklist.</p>
+          </article>
+          <article class="pillar">
+            <h3>Controlled execution</h3>
+            <p>Inspect before editing, work in one loop at a time, never mix lanes, always report validation and blockers.</p>
+          </article>
+          <article class="pillar">
+            <h3>Handoff-ready</h3>
+            <p>Each mission prepares the next step — ads feed prompts, prompts feed pages, pages feed spaces and games.</p>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="archive" class="section archive-section">
-        <div class="section-heading">
+    <!-- ============ ARCHIVE ============ -->
+    <section class="section archive" id="archive">
+      <div class="wrap">
+        <header class="section__head reveal">
           <p class="eyebrow">Output archive</p>
-          <h2>The archive is production memory.</h2>
-          <p>Completed missions should leave a brief, final output, QA report, manifest, source references, and a clear next handoff.</p>
+          <h2 class="section__title">Nothing ships without a record.</h2>
+          <p class="section__lede">
+            Completed missions are archived with a brief, final output, QA report, and a
+            production manifest — enough to reproduce or continue the work.
+          </p>
+        </header>
+        <div class="archive__grid reveal">
+          <article class="artifact">
+            <div class="artifact__media" aria-hidden="true"><span class="placeholder placeholder--sm"><span class="placeholder__tag">Artifact</span></span></div>
+            <h3>WEB-M001</h3>
+            <p>Loop Mission landing page MVP</p>
+            <span class="artifact__status is-pass">QA · pass</span>
+          </article>
+          <article class="artifact">
+            <div class="artifact__media" aria-hidden="true"><span class="placeholder placeholder--sm"><span class="placeholder__tag">Artifact</span></span></div>
+            <h3>ADS-M001</h3>
+            <p>Premium AI studio launch campaign</p>
+            <span class="artifact__status is-pass">QA · pass</span>
+          </article>
+          <article class="artifact">
+            <div class="artifact__media" aria-hidden="true"><span class="placeholder placeholder--sm"><span class="placeholder__tag">Artifact</span></span></div>
+            <h3>IMG-M001</h3>
+            <p>Photoreal prompt manifest</p>
+            <span class="artifact__status is-pass">QA · pass</span>
+          </article>
         </div>
-        <div class="archive-flow" aria-label="Archive artifact flow">
-          <span>Brief</span>
-          <span>Output</span>
-          <span>QA</span>
-          <span>Manifest</span>
-          <span>Next loop</span>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta" id="cta">
+      <div class="wrap cta__inner reveal">
+        <h2 class="cta__title">Turn the next idea into a production mission.</h2>
+        <p class="cta__lede">Choose one loop, write the brief, and let the mission loop do the rest.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="#loops">Start Mission 001</a>
+          <a class="btn btn--ghost btn--lg" href="#hero">Back to top</a>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="section cta-section">
-        <p class="eyebrow">Ready for the next mission</p>
-        <h2>Create, validate, archive, continue.</h2>
-        <p>Mission 001 now has ads source files, photoreal prompt direction, and this web MVP foundation ready for review.</p>
-        <a class="button primary" href="#hero">Return to top</a>
-      </section>
-    </main>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="brand"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">LOOP&nbsp;MISSION</span></span>
+      <p class="footer__note">A one-person AI studio that ships. · Mission 001 MVP</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js" defer></script>
+</body>
 </html>
-
