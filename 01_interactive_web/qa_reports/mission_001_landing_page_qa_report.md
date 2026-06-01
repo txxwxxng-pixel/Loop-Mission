@@ -2,11 +2,14 @@
 
 ## Mission
 
-Mission 001 - Loop Mission Interactive Landing Page MVP
+Mission 001 - Loop Mission Interactive Landing Page MVP (rebuilt)
 
-## Target Branch
+## Run
 
-`lm/01-interactive-web`
+- **Run:** WEB-M001
+- **Date:** 2026-06-01
+- **Branch:** `claude/interactive-web-demo-kLgnb`
+- **Output:** `01_interactive_web/projects/mission_001_loop_mission_landing_page/`
 
 ## Files Reviewed
 
@@ -16,51 +19,42 @@ Mission 001 - Loop Mission Interactive Landing Page MVP
 - `01_interactive_web/projects/mission_001_loop_mission_landing_page/styles.css`
 - `01_interactive_web/projects/mission_001_loop_mission_landing_page/script.js`
 - `01_interactive_web/exports/mission_001_landing_page_handoff_manifest.md`
-- `01_interactive_web/qa_reports/mission_001_landing_page_qa_report.md`
 
-## Checks Performed
+## Brief Definition Of Done
 
-- [x] Required files exist.
-- [x] Scope is limited to `01_interactive_web/`.
-- [x] No generated images were created.
-- [x] No Streamlit app was created.
-- [x] No Unreal or Unity files were created.
-- [x] Static project has a README and run instructions.
-- [x] Page includes hero, five loops, workflow, positioning, archive, and CTA sections.
-- [x] Page includes image placeholder areas for future generated assets.
-- [x] Page includes basic interactions: loop selector, workflow selector, hover/focus states, and reveal motion.
-- [x] CSS includes responsive breakpoints for mobile layouts.
+- [x] Static MVP exists under `projects/mission_001_loop_mission_landing_page/`.
+- [x] Page includes all required sections (hero, five loops, workflow, positioning, archive, CTA).
+- [x] Page is responsive (breakpoints at 900px and 620px).
+- [x] Project has a README with exact run options.
+- [x] Handoff manifest and QA report exist.
+- [x] No files outside `01_interactive_web/` are modified.
 
-## Browser QA Performed
+## Loop QA Checklist
 
-Local validation server:
+- [x] Layout fits desktop and mobile targets — grids collapse to single column; loop tabs become a horizontal scroller on mobile.
+- [x] Navigation and interactions implemented — loop selector, workflow stepper, anchor nav, scroll reveal, condensing nav.
+- [x] Assets referenced from valid relative paths (`styles.css`, `script.js`).
+- [x] Text does not overlap or overflow — fluid `clamp()` type, wrapping flex rows, `overflow-x: hidden` on body.
+- [x] Export/deployment notes present (README + handoff manifest).
+- [x] No generated images, no Streamlit, no framework, no Unreal/Unity files.
 
-```text
-python -m http.server 4173
-```
+## Accessibility
 
-Checked at:
-
-```text
-http://localhost:4173
-```
-
-Results:
-
-- [x] Page title loaded: `Loop Mission - One-Person AI Studio`.
-- [x] Hero heading loaded: `Loop Mission`.
-- [x] Required sections exist: hero, loops, workflow, archive.
-- [x] Loop selector updates the loop copy.
-- [x] Workflow selector updates the workflow copy.
-- [x] Future image placeholder zones are visible.
-- [x] Desktop overflow scan found no overflowing elements at the tested viewport.
+- [x] Skip-to-content link.
+- [x] Loop selector uses `role="tablist"`/`role="tab"`, `aria-selected`, and arrow-key roving focus.
+- [x] Workflow detail region uses `aria-live="polite"`.
+- [x] Visible `:focus-visible` rings on interactive elements.
+- [x] `prefers-reduced-motion` collapses all animation/transition to instant.
+- [x] Decorative elements marked `aria-hidden`.
 
 ## Known Limitations
 
-- Future generated images are placeholders only.
-- No production deployment config is included.
-- No external analytics, forms, or backend integration are included.
+- Image areas are placeholders for future photoreal assets (IMG-M001 → WEB-M001).
+- Archive cards use representative mission IDs pending real archive entries.
+- Manual cross-browser/device testing not performed in this environment; responsive
+  behavior validated by CSS review. Recommend a Safari/Firefox smoke test before deploy.
 
 ## Status
 
-Pass for static MVP foundation.
+Pass for MVP review. Visual taste, brand fit, final copy, and deployment readiness
+remain for user verification per loop rules.
